@@ -104,6 +104,17 @@ public class CartTests {
         assertProductItem(newcart, 0, "item1", 10);
         assertProductItem(newcart, 1, "item2", 100);
     }
+    
+    @Test
+    public void serialize2() throws Exception {
+        cart.setQuantity("item1", 10);
+        cart.setQuantity("item2", 100);
+
+        Cart newcart = deepClone();
+
+        assertProductItem(newcart, 0, "item1", 10);
+        assertProductItem(newcart, 1, "item2", 100);
+    }
 
     private Cart deepClone() throws Exception {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
