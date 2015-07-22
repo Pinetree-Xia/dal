@@ -8,5 +8,8 @@
     <sqlMap resource="petstore/dal/sqlmap/ProductItem.xml" />
     <sqlMap resource="petstore/dal/sqlmap/Sequence.xml" />
     <sqlMap resource="petstore/dal/sqlmap/OrderItem.xml" />
+    
+    
+    
     <sqlMap resource="petstore/dal/sqlmap/Order.xml" />
 </sqlMapConfig>
